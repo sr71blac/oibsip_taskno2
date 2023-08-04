@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width",inital-scale=1.0>
+        <title> Personal portfolio website - shikhar</title>
+        <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div id="header">
+          <div class="container">
+            <nav>
+                <img src="images/resized.png" class="logo">
+                <ul id="sidemenu">
+                   <li><a href="#header">Home</a></li>
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#services">Services</a></li>
+                   <li><a href="#portfolio">Portfolio</a></li>
+                   <li><a href="#contact">Contact</a></li>
+                   <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend developer</p>
+                <h1>Hi , I'm <span> Shikhar</span><br> From India </h1>
+            </div>
+        </div>
+    </div>
+    <!-- about me -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="images/user1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Shikhar raj currently in 4th year pursuing B.Tech in computer science branch from KIET GROUP OF INSTITUTIONS. As far as reason for choosing computer science branch is concern , when i was in my class 12th i was interested in the how the development and working of webiste is done , so for the curoisty of getting to know the answers to some of the technical questions i selected this  branch , Currently i am  doing frontend development and plan to explore this domain even further</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend web development</span><br>Designing a functional frontend user interface</li> 
+                            <li><span>Data science and machine learning</span><br>Designing spam classifer</li> 
+                            <li><span>Editing</span><br>Using of the basic photoshop and minimilistic editing</li> 
+                            </ul>
+                    </div>
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>KIET GROUP OF INSTITUTIONS (ongoing)</li> 
+                            <li><span>2018</span><br>Class 12th from KDB Public School (67.17%)</li>  
+                            <li><span>2016</span><br>Class 10th from Brigtland School (78%) CBSE </li> 
+                            </ul>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p> Here in this i can provide you with an interactive and innovative web page</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Data science and machine learning</h2>
+                    <p> Here in this i can provide you with an ability to add spam classifer features to the website and the machine</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Editing</h2>
+                    <p> Using of the basic photoshop and minimilistic editing</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social media webiste</h3>
+                        <p>This webiste help you to connect to the people around the globe</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images//1_9vX9GriIxB3yRXYtoEiy8w (1).jpg">
+                    <div class="layer">
+                        <h3>Email spam classifer</h3>
+                        <p>This tool helps in the classification of the email as spam </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/img_workspace-illustration (1).jpg">
+                    <div class="layer">
+                        <h3>Editing</h3>
+                        <p>with the use of photoshop , illustrator providing next level editing </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+<!-- contact -->
+<div id="contact">
+    <div class="contact">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+            <p><i class="fa-solid fa-phone"></i>0123456789</p>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/shikhar-raj-1706b6145/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="images/shikhar  resume 2.pdf" download class ="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+    </div>
+   
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+    </body>
+</html>
